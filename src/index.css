@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #0B2217;
+    color: #F8F6F1;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B2217;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #254d38;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 87, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF57;
+}
+
+/* Luxury Glow & Gradients */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F8F6F1 0%, #D4AF57 50%, #EBD59B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(to right, rgba(212, 175, 87, 0.1), rgba(212, 175, 87, 0.8), rgba(212, 175, 87, 0.1)) 1;
+}
+
+.gold-badge {
+  background: linear-gradient(135deg, rgba(212, 175, 87, 0.15) 0%, rgba(14, 44, 30, 0.6) 100%);
+  border: 1px solid rgba(212, 175, 87, 0.4);
+}
+
+.card-luxury {
+  background: rgba(14, 44, 30, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 87, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card-luxury:hover {
+  border-color: rgba(212, 175, 87, 0.5);
+  box-shadow: 0 10px 30px -10px rgba(212, 175, 87, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Brand pattern background */
+.valence-pattern-bg {
+  background-image: radial-gradient(rgba(14, 44, 30, 0.88), rgba(11, 34, 23, 0.98)), url('/assets/Patern-Valence-1.png');
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
